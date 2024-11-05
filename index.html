@@ -4,19 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/output.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="Hero">Hero</a></li>
-                <li><a href="Listing">Listing</a></li>
-                <li><a href="SomeText">SomeText</a></li>
-                <li><a href="Contact">Contact</a></li>
+    <header class="p-0 mb-3">
+        <h1 class="bg-orange-200 text-white text-center text-sm md:text-lg">БЕЗПЛАТНА ДОСТАВКА ДО 2 РАБОТНИ ДНИ</h1>
+        <nav class="flex items-center justify-center bg-white h-28">
+            <img src="images/cocosolis.png" class="w-32 md:w-48 mr-2 md:mr-5 rounded-lg">
+            <ul class="flex space-x-4 md:space-x-6">
+                <li><a href="Hero" class="header-text">Начало</a></li>
+                <li><a href="Listing" class="header-text">Продукти</a></li>
+                <li><a href="SomeText" class="header-text">Club</a></li>
+                <li><a class="header-text cursor-pointer">За нас</a></li>
+                <li><a href="Contact" class="header-text">Контакти</a></li>
+                <li class="relative group">
+                    <button>
+                        <img src="images/list.png" class="w-7 h-5 mt-1">
+                    </button>
+                    <ul class="flex-col absolute w-72 border border-gray-200 rounded-md shadow-lg opacity-0 scale-y-0 transition duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-y-100 origin-top bg-white">
+                         <li><a class="menu-text p-5">Условия за ползване на сайта</a></li>
+                         <li><a class="menu-text">Правила за закупуване</a></li>
+                         <li><a class="menu-text">Поръчка и доставка</a></li>
+                         <li><a class="menu-text">Политика за защита на лични данни</a></li>
+                         <li><a class="menu-text">Условия на Програма за лоялност</a></li>
+                         <li><a class="menu-text">Политика за бисквитки</a></li>
+                         <li><a class="menu-text">Политика за връщане</a></li>
+                    </ul>
+                </li>
+                <li><img src="images/search.jpg" class="w-6 ml-8"></li>
+                <li><img src="images/shoppingCart.png" class="w-6"></li>
+                <li class="flex">
+                    <img src="images/user.png" class="w-9">
+                    <a class="header-text"> Влез в профил</a>
+                </li>
             </ul>
         </nav>
+        <ul class="flex  items-center justify-center gap-6 border-t text-xs md:text-sm">   
+            <li><a class="categories-list-text">Лице</a></li>
+            <li><a class="categories-list-text">Коса</a></li>
+            <li><a class="categories-list-text">Кожа</a></li>
+            <li><a class="categories-list-text">Автобронзанти</a></li>
+            <li><a class="categories-list-text">Блясък</a></li>
+            <li><a class="categories-list-text">Тен</a></li>
+            <li><a class="categories-list-text">SPF</a></li>
+        </ul>
     </header>
+
+    <div class="bg-stone-500 bg-center w-screen" style="height: 600px">
+        <div class="w-2/3 mx-auto">
+            <img src="images/newLogo.png" class="w-44">
+
+        </div>
+    </div>
+
+    <section class="bg-orange-50">
+        <div class="text-center ">
+            <h2 class="text-stone-500 text-5xl uppercase text-center pt-16">Коса</h2>
+            <p clss="text-stone-500">Натурални продукти за силна, гъста и бляскава коса</p>
+        </div>
+        <div>
+            <ul class="flex items-center justify-center">
+                <li class="text-center w-80">
+                    <img src="images/grow-hair-spray.png" class="w-72">
+                    <div class="text-wrap w-80">
+                    <p class="text-stone-500 text-center text-2xl uppercase mb-0">Grow</p>
+                    <p class="text-stone-500 text-center text-xl mb-0">Hair Growth Serum Spray</p>
+                    <p class="text-stone-500 text-center mb-0"> Спрей серум за бърз растеж на косата. Намалява косопада. За видимо по-гъста и силна коса.</p>
+                    </div>
+                    <div class="w-80 p-3">
+                    <p class="mb-1 mt-1 text-3xl">59,00 лв.</p>
+                    <button class="justify-center w-full text-white bg-stone-500 px-10 py-15 text-xl hover:bg-orange-200">Добави</button>
+                    </div>
+                </li>
+                <li class="text-center w-80">
+                    <img src="images/hair-olio.png" class="w-80 h-72">
+                    <div class="text-wrap w-80">
+                    <p class="text-stone-500 text-center text-2xl uppercase mb-0">Hair</p>
+                    <p class="text-stone-500 text-center text-xl mb-0">Oil Mask 3in1</p>
+                    <p class="text-stone-500 text-center mb-0"> Натурално масло маска 3в1 за интензивно подхранване, възстановяване и грижа за косата.</p>
+                    </div>
+                    <div class="w-80 p-3">
+                    <p class="mb-1 mt-1 text-3xl">45,00 лв.</p>
+                    <button class="justify-center w-full  text-white bg-stone-500 px-10 py-15 text-xl hover:bg-orange-200">Добави</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="overflow-hidden whitespace-nowrap bg-stone-500 h-10 ">
+        <p class="text-white inline-block animate-scroll-left text-3xl font-bold">
+            I hate css
+        </p>
+    </section>
 
     <footer>
         <p>&copy; 2024 SomeRandomSite</p>

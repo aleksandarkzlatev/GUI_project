@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{}
+body{
+    @apply font-sans m-0 p-0 box-border leading-relaxed;
+}
+
+h1, h2, h3{
+    @apply text-gray-800 mb-2.5;
+}
+
+p{
+    @apply text-gray-600 mb-5;
+}
+
+a.cta {
+    @apply inline-block bg-blue-500 text-white py-2 px-4 no-underline rounded;
+}
+
+header {
+    @apply p-5 text-center;
+}
+
+.header-text{
+    @apply text-stone-500 hover:text-orange-200 text-xs md:text-sm uppercase cursor-pointer
+}
+
+.menu-text{
+    @apply block py-2 text-lg text-left header-text 
+}
+
+.categories-list-text{
+    @apply header-text hover:underline underline-offset-4
+}
+
+nav ul {
+    @apply list-none p-0 flex justify-center space-x-5;
+}
+
+footer {
+    @apply text-center p-5 mt-5;
+}
+
+
+section#hero {
+    @apply p-10 text-center;
+}
+
+section#hero img {
+    @apply w-full max-w-5xl h-auto my-5 self-center
+}
+
+section#listing {
+    @apply p-10;
+}
+
+section#listing ul {
+    @apply grid grid-cols-3 gap-5;
+}
+
+section#listing ul li {
+    @apply flex flex-col justify-between p-5 shadow;
+}
+
+.titleItem {
+    @apply text-xl font-bold text-center;
+}
+
+.listImage {
+    @apply max-w-full max-h-[500px] mx-auto;
+}
+
+.descriptionItem {
+    @apply mt-auto text-center flex-grow;
+}
+
+.listButton {
+    @apply flex gap-2 mt-auto bg-blue-500 text-white p-2 border-none rounded cursor-pointer hover:bg-blue-700;
+}
+
+
+@media (max-width: 600px) {
+    .item {
+        @apply w-[48%];
+    }
+}
+
+
+section#someText {
+    @apply p-10;
+}
+
+section#someText ul {
+    @apply list-disc ml-10;
+}
+
+
+section#contact {
+    @apply p-10 text-center;
+}
+
+form {
+    @apply inline-block text-left;
+}
+
+form label {
+    @apply block mb-2.5;
+}
+
+form input, form textarea {
+    @apply w-full p-2 mb-5 border border-gray-300 rounded;
+}
+
+form button {
+    @apply w-full bg-blue-500 text-white p-2 rounded cursor-pointer;
+}
+
+form button:hover {
+    @apply bg-blue-700;
+}
