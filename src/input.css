@@ -30,6 +30,14 @@ header {
     @apply block py-2 text-lg text-left header-text 
 }
 
+.scrolling {
+    @apply fixed top-0 w-full h-[100px] transition-all duration-200
+}
+
+.icon {
+    @apply border border-white rounded-full h-[55px] w-[55px] p-[10px] flex items-center justify-center bg-[#daa48a]
+}
+
 .categories-list-text{
     @apply header-text hover:underline underline-offset-4
 }
